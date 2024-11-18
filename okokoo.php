@@ -1,4 +1,2 @@
 <?php
-interface fdsfsdfds {
-    public function fdsfsdfsd();
-}
+echo 'fdsfsdfsdfsfsfsfsfsfsdf';
