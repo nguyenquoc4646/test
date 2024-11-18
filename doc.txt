@@ -43,3 +43,4 @@ git status kiểm tra các file vừa được add . (thay đổi)
 git checkout -b <tên nhánh> (tạo nánh mới)
 git push -u origin <tên nhánh>
 git branch -d <tên nhánh> xóa cục bộ
+git push origin --delete <tên nhánh> xóa nhánh trên server
