@@ -30,3 +30,16 @@ vd: A - 8r, B - 8r -> (AB chung 3 bản ghi) => 3+(8-3) = 9 bản ghi
 right join -> B - 6R, A - 8R -> (BA chung 2 bản ghi) => 2 + (6-2) = 6;
 full outer join ->nghĩa là nó sẽ lấy tất cả bản ghi từ cả 2 bảng
 self join -> ( sử dụng inner joijn - left join - right join ) để joijn với chính nó
+
+6. các câu hỏi về git 
++ git init khởi repository trong thư mục code ( repository,commit )
++ git add . thêm các mục thay đổi vào thư mục hiện tại ( chờ commit )
++ git commit - m "Đóng gói  và chuẩn bị push "
++ git push origin main ( push code )
+
+git checkout <tên nhánh> (Chuyển sang nhánh - trước khi chuyển sang nhánh thì phải lưu thay đổi bằng git add . - git commit -m)
+git branch kiểm tra nhánh hiện tại
+git status kiểm tra các file vừa được add . (thay đổi)
+git checkout -b <tên nhánh> (tạo nánh mới)
+git push -u origin <tên nhánh>
+git branch -d <tên nhánh> xóa cục bộ
