@@ -1,0 +1,32 @@
+1. sự khác nhau giữa interface và abtract class
+interface: + 1 class có thể implement nhiều interface
+           + interface chỉ được khai báo phương thức chứ không được định nghĩa
+           + interface chỉ được định nghĩa 1 hằng số không đổi ( class con truy cập bằng từ khóa self::hằng số )   
+           + những class con mà implement interface thì phải bắt buộc định nghĩa các phương thức đã có trong interface
+           + không có access modifier ( public )
+
+abtract    + 1 class chỉ có thể exten được 1 abtract class
+           + trong abtract class có thể chứa các hàm định nghĩa, hàm không định nghĩa nhưng phải có từ khóa abtract đằng trước
+           + có access modifier
+           + abtract class có thể định nghĩa các thuộc tính ( nếu như modifier là protected và private)
+           thì class con muốn lấy thì cha phải hàm lấy ra trước, sau đó class con sẽ dùng $this->get trong class cha
+           + còn muốn ghi đè thì phải: dùng từ khóa
+            public function __construct($name) {
+             // Gọi constructor của class A
+             parent::__construct($name);
+    }
+
+4. khác nhau giữa include,require,include_one,require_one    
+include -> file không tồn tại thì nó đyă ra dòng cảnh báo nhưng vẫn chạy chương trình
+require -> file không tồn tại thì nó báo lỗi và dừng hẳn chương trình
+include_one -> nếu như include nhiều lần thì nó sẽ chỉ lấy cái đầu tiên
+require_one -> cũng vậy
+
+5. các câu hỏi truy vấn về join,sql cơ bản, having, group by.
+inner join -> lấy tất cả chung của cả 2 bảng
+left join -> lấy tất cả bảng bên trái, và những bản ghi chung 2 bảng
+vd: A - 8r, B - 8r -> (AB chung 3 bản ghi) => 3+(8-3) = 9 bản ghi
+
+right join -> B - 6R, A - 8R -> (BA chung 2 bản ghi) => 2 + (6-2) = 6;
+full outer join ->nghĩa là nó sẽ lấy tất cả bản ghi từ cả 2 bảng
+self join -> ( sử dụng inner joijn - left join - right join ) để joijn với chính nó
